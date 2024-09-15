@@ -53,7 +53,7 @@ export const SearchHero = () => {
           <div className="col-5">
             <h4>Searching</h4>
             <hr />
-            <form onSubmit={ onSearchSubmit }>
+            <form aria-label="form" onSubmit={ onSearchSubmit }>
                 <input 
                 type="text" 
                 placeholder="Search Hero" 
@@ -78,7 +78,7 @@ export const SearchHero = () => {
             Search Hero 
             </div>
 
-            <div style={{ display: showError ? '' : 'none' }}  className="alert alert-danger animate__animated animate__fadeIn">
+            <div aria-label="alert-danger" style={{ display: showError ? '' : 'none' }}  className="alert alert-danger animate__animated animate__fadeIn">
                 There ar en't results such <b>{ q }</b> specified
             </div>
 
